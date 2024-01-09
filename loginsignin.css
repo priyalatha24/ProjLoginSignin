@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/*navbar*/
+.navbar{
+    background-color: darkred;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: sticky;
+}
+.loginbtn{
+    padding: 10px;
+    background-color: rgb(240, 106, 57);
+    border-radius: 10px;
+    flex-direction: row;
+    gap: 1rem;
+}
+.signinbtn{
+    padding: 10px;
+    background-color: coral;
+    border-radius: 10px;
+    flex-direction: row;
+    gap: 1rem;
+}
+button{
+    margin: 20px;
+}
+/* ----------------------------------------------------------- */
+
+h2{
+    margin: 30px;
+}
+
+.popuplogin{
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    position: absolute;
+    margin: 20px;
+    top: 50%;
+    left:50%;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(1.25); /*popup arises */
+    width: 280px;
+    background-color: cadetblue;
+    padding: 20px 20px;
+    border-radius: 20px;
+    /* popup arising transition */
+    transition: top 0ms ease-in-out 200ms,
+    opacity 200ms ease-in-out 0ms,
+    top 200ms ease-in-out 0ms;
+}
+.popuplogin.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1); /*popup arises */
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    top 200ms ease-in-out 0ms,;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey; 
+}
+
+.form-elements button{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey; 
+    margin-left: 60px;
+}
+
+.closebtn{
+    position: relative;
+    top:10px;
+    right: -230px;
+    width: 20px;
+    height: 15px;
+    background: #690c0c;
+    color: aliceblue;
+    text-align: center;
+    line-height: 10px;
+    border-radius: 40px;
+    cursor:pointer ;
+}
+.popuplogin .form .form-elements{
+    margin: 15px 0px;
+}
+
+.popuplogin .form .form-elements[type="text"],
+.popuplogin .form .form-elements[type="password"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* .popuplogin .form .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: #222;
+    border-radius: 10px;
+    cursor: pointer;
+} */
