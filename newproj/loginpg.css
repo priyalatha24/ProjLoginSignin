@@ -1,89 +1,23 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
-/*navbar*/
-.navbar{
-    background-color: rgb(34, 93, 96);
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    position: sticky;
-}
-.loginbtn{
-    padding: 10px;
-    background-color: rgb(240, 106, 57);
-    border-radius: 10px;
-    flex-direction: row;
-    gap: 1rem;
-}
-.signinbtn{
-    padding: 10px;
-    background-color: coral;
-    border-radius: 10px;
-    flex-direction: row;
-    gap: 1rem;
-}
-button{
-    margin: 20px;
-}
-/* ----------------------------------------------------------- */
-
-h2{
-    margin: 30px;
+:root {
+    --primary-color: #311246;
+    --second-color: #152a04;
+    --black-color: #eee7e7;
 }
 
-.popuplogin{
-    display: flex;
-    justify-content: center;
-    /* align-content: center; */
-    position: absolute;
-    margin: 20px;
-    top: 50%;
-    left:50%;
-    opacity: 0;
-    transform: translate(-50%,-50%) scale(1.25); /*popup arises */
-    width: 280px;
-    background-color: cadetblue;
-    padding: 20px 20px;
-    border-radius: 20px;
-    /* popup arising transition */
-    transition: top 0ms ease-in-out 200ms,
-    opacity 200ms ease-in-out 0ms,
-    top 200ms ease-in-out 0ms;
+body {
+    /* background-image: url("https://static.vecteezy.com/system/resources/previews/002/463/630/large_2x/jungle-wild-nature-green-color-scene-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
 }
-.popuplogin.active{
-    top: 50%;
-    opacity: 1;
-    transform: translate(-50%,-50%) scale(1); /*popup arises */
-    transition: top 0ms ease-in-out 0ms,
-    opacity 200ms ease-in-out 0ms,
-    top 200ms ease-in-out 0ms,;
+a {
+    text-decoration: none;
+    color: var(--second-color);
 }
-
-input{
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid grey; 
-}
-
-
-
-.closebtn{
-    position: relative;
-    top:10px;
-    right: -230px;
-    width: 20px;
-    height: 15px;
-    background: #690c0c;
-    color: aliceblue;
-    text-align: center;
-    line-height: 10px;
-    border-radius: 40px;
-    cursor:pointer ;
+a:hover {
+    text-decoration: underline;
 }
 .wrapper {
     width: 100%;
@@ -98,7 +32,7 @@ input{
     width: 450px;
     backdrop-filter: blur(25px);
     border: 2px solid var(--primary-color);
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px 2px rgba(149, 13, 13, 0.533);
     border-radius: 15px;
     padding: 7.5em 2.5em 4em 2.5em;
     color: var(--second-color);
@@ -149,13 +83,14 @@ input{
     margin: 20px 0;
 }
 .input-field {
-    width: 100%;
+    width: 80%;
     height: 55px;
     font-size: 16px;
     background: transparent;
-    color: var(--second-color);
+    /* color: white; */
+    color: var(--primary-color);
     padding-inline: 20px 50px;
-    border: 2px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
     border-radius: 30px;
     outline: none;
 }
@@ -194,15 +129,17 @@ input{
     width: 100%;
     height: 50px;
     background: #c6c3c3;
-    font-size: 16px;
-    font-weight: 500;
+    /* border: 3px solid var(--primary-color); */
+    border: 3px solid var(--primary-color);
+    font-size: 19px;
+    font-weight: 700;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: 0.3s;
 }
 .input-submit:hover {
-    background: var(--second-color);
+    background: var(--black-color);
 }
 .register {
     text-align: center;

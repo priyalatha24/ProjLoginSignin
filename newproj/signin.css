@@ -1,89 +1,24 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
-/*navbar*/
-.navbar{
-    background-color: rgb(34, 93, 96);
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    position: sticky;
-}
-.loginbtn{
-    padding: 10px;
-    background-color: rgb(240, 106, 57);
-    border-radius: 10px;
-    flex-direction: row;
-    gap: 1rem;
-}
-.signinbtn{
-    padding: 10px;
-    background-color: coral;
-    border-radius: 10px;
-    flex-direction: row;
-    gap: 1rem;
-}
-button{
-    margin: 20px;
-}
-/* ----------------------------------------------------------- */
-
-h2{
-    margin: 30px;
-}
-
-.popuplogin{
-    display: flex;
-    justify-content: center;
-    /* align-content: center; */
-    position: absolute;
-    margin: 20px;
-    top: 50%;
-    left:50%;
-    opacity: 0;
-    transform: translate(-50%,-50%) scale(1.25); /*popup arises */
-    width: 280px;
-    background-color: cadetblue;
-    padding: 20px 20px;
-    border-radius: 20px;
-    /* popup arising transition */
-    transition: top 0ms ease-in-out 200ms,
-    opacity 200ms ease-in-out 0ms,
-    top 200ms ease-in-out 0ms;
-}
-.popuplogin.active{
-    top: 50%;
-    opacity: 1;
-    transform: translate(-50%,-50%) scale(1); /*popup arises */
-    transition: top 0ms ease-in-out 0ms,
-    opacity 200ms ease-in-out 0ms,
-    top 200ms ease-in-out 0ms,;
-}
-
-input{
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid grey; 
-}
+/* signin */
 
 
-
-.closebtn{
-    position: relative;
-    top:10px;
-    right: -230px;
-    width: 20px;
-    height: 15px;
-    background: #690c0c;
-    color: aliceblue;
-    text-align: center;
-    line-height: 10px;
-    border-radius: 40px;
-    cursor:pointer ;
+:root {
+    --primary-color: #c6c3c3;
+    --second-color: #ffffff;
+    --black-color: #000000;
+}
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/463/630/large_2x/jungle-wild-nature-green-color-scene-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+a:hover {
+    text-decoration: underline;
 }
 .wrapper {
     width: 100%;
@@ -149,7 +84,7 @@ input{
     margin: 20px 0;
 }
 .input-field {
-    width: 100%;
+    width: 90%;
     height: 55px;
     font-size: 16px;
     background: transparent;
